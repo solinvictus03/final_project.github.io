@@ -11,3 +11,6 @@ export const shuffle = (array) => {
     return array;
 }
 
+
+export const duplicateArray = (array) => array.reduce((res, current) => res.concat([current, current]), []);
+
