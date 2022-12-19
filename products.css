@@ -60,3 +60,21 @@ body {
     width: 960px;
     padding: 20px 10px 20px;
 }
+
+.con1 img {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+.con2 img {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+.con3 img {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
