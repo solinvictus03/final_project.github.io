@@ -228,3 +228,70 @@ h6 {
     filter: blur(40px);
     opacity: 0.5;
 }
+
+.ataturkk {
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+}
+
+.hachh {
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+}
+
+@keyframes moving {
+    0% {
+        top: 30px;
+    }
+}
+
+#templatemo_wrapper {
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+#templatemo_header {
+    width: 960px;
+    height: 100px;
+}
+
+#templatemo_menu {
+    width: 960px;
+    height: 50px;
+
+}
+
+#templatemo_menu1 {
+    width: 960px;
+    height: 50px;
+
+}
+
+#templatemo_middle {
+    height: 840px;
+    height: 200px;
+    padding: 35px 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#templatemo_main_top {
+    width: 960px;
+    height: 12px;
+
+}
+
+#templatemo_main {
+    width: 960px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+}
+
+#content {
+    width: 960px;
+    width: 960px;
+    padding: 20px 10px 20px;
+}
