@@ -76,6 +76,3 @@ if (Array.from(cards).every(card => card.className.includes('flip'))) {
     
 }
 
-startGame();
-
-
