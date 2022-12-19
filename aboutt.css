@@ -358,3 +358,89 @@ max-width: 600px {
         line-height: 1.8;
     }
 }
+
+.hachh {
+    position: absolute;
+    top: -400px;
+    right: 200px;
+    width: 920px;
+    left: 800px;
+}
+
+.ataturkk {
+    position: absolute;
+    top: -400px;
+    right: 0px;
+    right: 800px;
+    width: 980px
+}
+
+.okey {
+    position: relative;
+    z-index: -1;
+
+}
+
+.glow::before,
+.glow::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(-45deg, #00ff66, #00ffff, #ff00ff, #ff0099, #099fff);
+    background-size: 400%;
+    height: calc(100% + 5px);
+    width: calc(100% + 5px);
+    z-index: -1;
+    animation: change 40s linear infinite;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.glow::after {
+    filter: blur(40px);
+    opacity: 0.5;
+}
+
+.ataturkk {
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+}
+
+.hachh {
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+}
+
+@keyframes moving {
+    0% {
+        top: 30px;
+    }
+}
+
+.menu ul {
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu ul li {
+    position: relative;
+    display: inline;
+    float: left;
+}
