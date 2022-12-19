@@ -380,3 +380,37 @@ li {
     visibility: hidden;
     border-bottom: 4px solid #d4d4d4
 }
+
+.menu2 ul li ul li{
+    display: list-item;
+    float: none;
+    }
+    
+    
+    .menu2 ul li ul li ul{
+    top: 0;
+    }
+    
+    
+    .menu2 ul li ul li a{
+        font-weight: 400;
+        width: 130px; 
+        height: 30px;
+        padding: 0 30px;
+        line-height: 30px;
+        font-size: 11px;	
+        text-align: left;
+        background: none;
+        color: #666;
+        border-bottom: 1px dotted #999
+    }
+    
+    .menu2 ul li ul li a.selected, .menu2 ul li ul li a:hover {
+        color: white;
+        font-weight: 700;
+        background: none;
+    }
+    
+    
+    * html .menu2{height: 1%;} 
+    
