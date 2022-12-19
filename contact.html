@@ -16,6 +16,19 @@
 <script type="text/javascript" src="js/ddsmoothmenu.js">
 
 </script>
+  
+  ddsmoothmenu.init({
+	mainmenuid: "templatemo_menu", 
+	orientation: 'h',
+	classname: 'ddsmoothmenu', 
+	contentsource: "markup" 
+})
+
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
 
 </body>
 </html>
