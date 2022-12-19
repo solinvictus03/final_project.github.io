@@ -12,3 +12,14 @@ import { createImagesArray, duplicateArray, shuffle } from "./utils.js";
     const cardsIcons = createImagesArray();
     const duplicatedCardsIcons = duplicateArray(cardsIcons);
     const restartBtn = document.createElement('button');
+    
+    gameSection.innerHTML = '';
+    restartBtn.textContent = 'Restart';
+    gameTable.classList.add('game-table');
+    restartBtn.classList.add('restart-btn');
+  
+   shuffle(duplicatedCardsIcons);
+
+    duplicatedCardsIcons.forEach(icon => gameTable.append(createGameCard('question-circle', icon)));
+
+    gameSection.append(gameTable, restartBtn);
