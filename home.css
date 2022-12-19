@@ -295,3 +295,89 @@ h6 {
     width: 960px;
     padding: 20px 10px 20px;
 }
+
+.con1 img {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+.con2 img {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+.con3 img {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+#templatemo_footer {
+    width: 940px;
+    padding: 160px 10px 20px;
+    background-image: #06050d;
+
+}
+
+.con1 {
+    display: flex;
+}
+
+.con2 {
+    display: flex;
+}
+
+.con {
+    display: block;
+    margin-left: 10%;
+}
+
+.con3 {
+    display: flex;
+}
+
+#product_slider {
+    padding: 40px 30px 80px 30px;
+
+
+}
+
+#product_slider img {
+    width: 125px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    align-items:
+        center;
+}
+
+section video {
+    top: 0;
+    left: -50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0px;
+}
+
+section .navigation {
+    position: absolute;
+    padding: 1px;
+    bottom: -29%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 150px;
+
+}
