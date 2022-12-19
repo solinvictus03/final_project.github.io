@@ -563,3 +563,53 @@ max-width: 600px {
     display: flex;
     align-items: center;
 }
+
+label {
+    width: 180px;
+}
+
+.agree {
+    display: flex;
+}
+
+.btn {
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.btn:hover {
+    background-color: rgb(29, 56, 66);
+    color: rgb(11, 11, 40);
+}
+
+.gen_sel {
+    position: relative;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid black;
+    width: 60px;
+}
+
+.gen_sel::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0;
+    border: 5px solid;
+    border-color: rgb(35, 23, 69) transparent transparent transparent;
+}
+
+.input:focus,
+.gen_sel:focus {
+    border-color: red;
+}
+
+.agr {
+    font-size: 12px;
+    color: blueviolet;
+}
