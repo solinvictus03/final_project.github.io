@@ -243,3 +243,111 @@ h6 {
     z-index: -1;
 
 }
+
+.glow::before,
+.glow::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(-45deg, #00ff66, #00ffff, #ff00ff, #ff0099, #099fff);
+    background-size: 400%;
+    height: calc(100% + 5px);
+    width: calc(100% + 5px);
+    z-index: -1;
+    animation: change 40s linear infinite;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.glow::after {
+    filter: blur(40px);
+    opacity: 0.5;
+}
+
+.ataturkk {
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+}
+
+.hachh {
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+}
+
+@keyframes moving {
+    0% {
+        top: 30px;
+    }
+}
+
+.cleaner {
+    clear: both
+}
+
+.footer-distributed {
+
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+.footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+.footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 200px;
+}
