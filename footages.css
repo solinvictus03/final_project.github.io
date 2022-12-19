@@ -118,3 +118,107 @@ body {
     font-weight: 700;
     background: none;
 }
+
+.gallery {
+    overflow-y: hidden;
+    padding: auto;
+    display: grid;
+    grid-template-columns: repeat(10, 65vw);
+    grid-template-rows: 1px;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    overflow: scroll;
+    height: 75vh;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 1px;
+}
+
+.active {
+    scroll-snap-type: unset;
+}
+
+li {
+
+    scroll-snap-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team {
+    margin: 100px 0;
+}
+
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__item {
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.team__photo {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.team__name {
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: white;
+}
+
+.team__prof {
+    font-size: 13px;
+    color: tomato;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.team__text {
+    font-size: 14px;
+    line-height: 1.25;
+    color: dimgrey;
+}
+
+
+
+
+
+#p9 {
+    margin-left: 110px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+
+    #s2 {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: -200px;
+    }
+
+    .team {
+        margin: 10px 0;
+    }
+
+    .team__inner {
+        display: block;
+    }
+
+    .team__item {
+        width: 100%;
+        padding: 30px 50px;
+    }
+}
