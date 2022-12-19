@@ -75,3 +75,17 @@ select {
     border: 1px solid black;
     width: 60px;
 }
+
+.gen_sel::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0;
+    border: 5px solid;
+    border-color: rgb(35, 23, 69) transparent transparent transparent;
+}
+
+.input:focus,
+.gen_sel:focus {
+    border-color: red;
+}
