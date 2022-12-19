@@ -256,3 +256,52 @@ li {
     transition: all .25s;
     right: 10px;
 }
+
+.footer .footer-right0 a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.footer p.footer-links0 a:hover {
+    text-decoration: underline;
+}
+
+max-width: 600px {
+
+    .footer .footer-left0,
+    .footer .footer-right0 {
+        text-align: center;
+    }
+
+    .footer .footer-right0 {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    .footer .footer-left0 p.footer-links0 {
+        line-height: 1.8;
+    }
+}
+
+.box {
+    position: relative;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.input {
+    padding: 15px;
+    width: 53px;
+    height: 53px;
+    background: none;
+    border: 3px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: white;
+    outline: none;
+    transition: .5s;
+    align-items: center;
+}
