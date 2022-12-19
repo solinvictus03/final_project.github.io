@@ -444,3 +444,65 @@ max-width: 600px {
     display: inline;
     float: left;
 }
+
+.menu ul li a {
+    display: block;
+    padding: 0 35px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;
+    color: floralwhite;
+    text-decoration: none;
+    font-weight: 700;
+    outline: none;
+    text-align: center;
+    background: url(images/templatemo_menu_divider.png) right center no-repeat
+}
+
+* html .menu ul li a {
+    display: inline-block;
+}
+
+.menu ul li a.selected,
+.menu ul li a:hover {
+    color: #948e6b;
+    ;
+}
+
+.menu ul li ul {
+    position: absolute;
+    left: 0;
+    padding: 10px 0 0;
+    display: none;
+    visibility: hidden;
+    border-bottom: 4px solid #d4d4d4
+}
+
+.menu ul li ul li {
+    display: list-item;
+    float: none;
+}
+
+.menu ul li ul li ul {
+    top: 0;
+}
+
+.menu ul li ul li a {
+    font-weight: 400;
+    width: 130px;
+    height: 30px;
+    padding: 0 30px;
+    line-height: 30px;
+    font-size: 11px;
+    text-align: left;
+    background: none;
+    color: #666;
+    border-bottom: 1px dotted #999
+}
+
+.menu ul li ul li a.selected,
+.menu ul li ul li a:hover {
+    color: white;
+    font-weight: 700;
+    background: none;
+}
