@@ -1,32 +1,120 @@
-body{
+body {
 
-  
+
     font-family: 'Montserrat', sans-serif;
 
     font-size: 15px;
     color:
-    rgb(51, 51, 51) 
-    rgb(51, 51, 51);
+        rgb(51, 51, 51) rgb(51, 51, 51);
     line-height: 1.6;
 
     margin: 0;
     font-size: 19px;
     font-family: 'Raleway', sans-serif;
-    background-color: #06050d;;
+    background-color: #06050d;
+    ;
 }
-*::before
-*::after
-*{
+
+*::before *::after * {
     box-sizing: border-box;
 }
+
 #header {
-	width: 960px;
-	height: 100px;
+    width: 960px;
+    height: 100px;
 }
-#site_title { float: left; margin-top: 20px; }
+
+#site_title {
+    float: left;
+    margin-top: 20px;
+}
 
 #wrapper {
-	width: 960px;
-	padding: 0 10px;
-	margin: 0 auto;
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+#menu {
+    width: 960px;
+    height: 50px;
+
+}
+
+.menu ul {
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu ul li {
+    position: relative;
+    display: inline;
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 0 30px;
+    height: 50px;
+    line-height: 45px;
+    font-size: 15px;
+    color: floralwhite;
+    text-decoration: none;
+    font-weight: 700;
+    outline: none;
+    text-align: center;
+    background: url(images/templatemo_menu_divider.png) right center no-repeat
+}
+
+* html .menu ul li a {
+    display: inline-block;
+}
+
+.menu ul li a.selected,
+.menu ul li a:hover {
+    color: #948e6b;
+    ;
+}
+
+.menu ul li ul {
+    position: absolute;
+    left: 0;
+    padding: 10px 0 0;
+    display: none;
+    visibility: hidden;
+    border-bottom: 4px solid #d4d4d4
+}
+
+
+.menu ul li ul li {
+    display: list-item;
+    float: none;
+}
+
+
+.menu ul li ul li ul {
+    top: 0;
+}
+
+
+.menu ul li ul li a {
+    font-weight: 400;
+    width: 130px;
+    height: 30px;
+    padding: 0 30px;
+    line-height: 30px;
+    font-size: 11px;
+    text-align: left;
+    background: none;
+    color: #666;
+    border-bottom: 1px dotted #999
+}
+
+.menu ul li ul li a.selected,
+.ddsmoothmenu ul li ul li a:hover {
+    color: white;
+    font-weight: 700;
+    background: none;
 }
