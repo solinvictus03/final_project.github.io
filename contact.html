@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Us</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+
+
+<link rel="stylesheet" href="back/f.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "templatemo_menu", 
+	orientation: 'h',
+	classname: 'ddsmoothmenu', 
+	contentsource: "markup" 
+})
+
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+
+</head>
+
+<body id="subpage">
+
+<div id="templatemo_wrapper">
+	<div id="templatemo_header">
+    	<div id="site_title">
+        	
+            <img src="images/logo1.png" height="65px"> 
+        </div>
+        
+        <div id="header_right">
+           
+            <div class="cleaner"></div>
+            
+         </div> 
+    </div> 
+    
+    <div id="templatemo_menu" class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="footages.html">Footages</a> </li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a>
+                
+            </li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="checkout.html">Competition</a></li>
+            <li><a href="contact.html" class="selected">Contact Us</a></li>
+        </ul>
+        <br style="clear: left" />
+    </div>
+    
+    <div class="cleaner h20"></div>
+    <div id="templatemo_main_top"></div>
+    <div id="templatemo_main">
+    	
+        
+   	    
+            
+            <h3>Newsletter</h3>
+            <p style="color: aliceblue;">You can write you data and we'll call you!  Be a hero with us!</p>
+        
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <div class="okey">
+    
+            <div id="hach">
+                <img src="twofools/hach.png" class="hachh"/>
+                
+             </div>
+        
+             <div id="ataturk">
+                <img src="twofools/homelander.png" class="ataturkk"/>
+                
+             </div>
+        
+            </div>
+        
+        <div id="content">
+        	<h2>Contact Information</h2>
+            
+			
+            <form action="back/contact.php" method="post">   
+                <div class="form" id="registerBlock"  onsubmit="checkpsw()">
+                    <div class="container" > 
+                        <div class="title"> 
+                            Leave info 
+                        </div> 
+                            <div class="enter"> 
+                                <label for="name">First Name<i style="color: rgb(134, 46, 46);">*</i></label> 
+                                <input type="text" class="input" id="name" name="name" required>
+                            </div> 
+                            <div class="enter"> 
+                                <label for="surname">Last Name</label> 
+                                <input type="text" class="input" id="surname" name="surname"> 
+                            </div> 
+                            <div class="enter"> 
+                                <label for="email">Email <i style="color: rgb(134, 46, 46);">*</i></label> 
+                                <input type="email" class="input" id="email" name="email" required> 
+                            </div> 
+                            <div class="enter"> 
+                                <label for="phone">Phone number <i style="color: rgb(134, 46, 46);">*</i></label> 
+                                <input type="tel" class="input" id="phone" name="phone" maxlength="12" placeholder="+7 __________" required> 
+                            </div> 
+                            <div class="enter"> 
+                                <label for="comment">Comment <i style="color: rgb(134, 46, 46);">*</i></label> 
+                                <input type="comment" class="input" id="comment" name="comment" placeholder="Comment...." required> 
+                            </div> 
+                            
+                            
+                            <div class="register"> 
+                                <input type="submit" value="Send" class="btn"  onsubmit="checkpsw()"> 
+                            </div> 
+                        </div>    
+                
+                    </div>   
+                </form>
+             </div>
+            
+        
+            
+        	
+        <div class="cleaner h30"></div>
+        
+            
+        </div> 
+        <div class="cleaner"></div>
+    </div> 
+    
+    <footer class="footer-distributed">
+
+        <div class="footer-right" style="margin-top: 855px;">
+
+            <a href="https://www.facebook.com/VoughtIntl/"><i class="fa fa-facebook"></i></a>
+			<a href="https://twitter.com/voughtintl"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.instagram.com/voughtintl/"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.youtube.com/@voughtintl"><i class="fa fa-youtube"></i></a>
+
+        </div>
+
+        <div class="footer-left" style="margin-top: 850px;">
+
+            <p class="footer-links">
+                <a class="link-1" href="#">Home</a>
+
+                <a href="#">Products</a>
+
+
+                <a href="#">About</a>
+
+                <a href="#">FAQs</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p>Vought International &copy; 2022</p>
+        </div>
+
+    </footer>
+   
+</div>
+
+</body>
+</html>

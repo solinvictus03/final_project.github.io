@@ -1,0 +1,211 @@
+.footer-distributed0 {
+  
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	padding: 45px 50px;
+  }
+  
+  .footer-distributed0 .footer-left0 p {
+	color: black;
+	font-size: 14px;
+	margin: 0;
+  }
+  
+  .footer-distributed0 p.footer-links0 {
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	margin: 0 0 10px;
+	padding: 0;
+	transition: ease .25s;
+  }
+  
+  .footer-distributed0 p.footer-links0 a {
+	display: inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color: inherit;
+	transition: ease .25s;
+  }
+  
+  .footer-distributed0 .footer-links0 a:before {
+	content: "·";
+	font-size: 20px;
+	left: 0;
+	color: black;
+	display: inline-block;
+	padding-right: 5px;
+  }
+  
+  .footer-distributed0 .footer-links0 .link-0:before {
+	content: none;
+  }
+  
+  .footer-distributed0 .footer-right0 {
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+  }
+  
+  .footer-distributed0 .footer-right0 a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 2px;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	align-items: center;
+	line-height: 35px;
+	margin-left: 2px;
+	transition:all .25s;
+	right: 10px;
+  }
+
+  .footer-distributed0 .footer-right0 a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed0 p.footer-links0 a:hover{text-decoration:underline;}
+
+@media (max-width: 600px) {
+  .footer-distributed0 .footer-left0, .footer-distributed0 .footer-right0 {
+    text-align: center;
+  }
+  .footer-distributed0 .footer-right0 {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed0 .footer-left0 p.footer-links0 {
+    line-height: 1.8;
+  }
+}
+
+.box{
+    position: relative;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+
+.input {
+    padding: 15px;
+    width: 53px;
+    height: 53px;
+    background: none;
+    border: 3px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: white;
+    outline: none;
+    transition: .5s;
+	align-items: center;
+}
+.box:hover input{
+    width: 350px;
+    background: #3b3640;
+    border-radius: 10px;
+}
+.box i{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: white;
+    transition: .2s;
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.menu2 ul{
+	z-index:100;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+.menu2 ul li{
+	position: relative;
+	display: inline;
+	float: left;
+}
+
+
+.menu2 ul li a {
+	display: block;
+	padding: 0 35px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 15px;
+	color: floralwhite;	
+	text-decoration: none;
+	font-weight: 700;
+	outline: none;
+	text-align: center;
+	background: url(images/templatemo_menu_divider.png) right center no-repeat
+}
+
+* html .menu2 ul li a{ 
+display: inline-block;
+}
+
+.menu2 ul li a.selected, .menu2 ul li a:hover { 
+	color: #948e6b;;
+}
+
+
+.menu2 ul li ul {
+	position: absolute;
+	left: 0;
+	padding: 10px 0 0;
+	display: none; 
+	visibility: hidden;
+	border-bottom: 4px solid #d4d4d4
+}
+
+
+.menu2 ul li ul li{
+display: list-item;
+float: none;
+}
+
+
+.menu2 ul li ul li ul{
+top: 0;
+}
+
+
+.menu2 ul li ul li a{
+	font-weight: 400;
+	width: 130px; 
+	height: 30px;
+	padding: 0 30px;
+	line-height: 30px;
+	font-size: 11px;	
+	text-align: left;
+	background: none;
+	color: #666;
+	border-bottom: 1px dotted #999
+}
+
+.menu2 ul li ul li a.selected, .menu2 ul li ul li a:hover {
+	color: white;
+	font-weight: 700;
+	background: none;
+}
+
+
+* html .menu2{height: 1%;} 
+
