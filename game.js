@@ -45,4 +45,13 @@ import { createImagesArray, duplicateArray, shuffle } from "./utils.js";
  if (firstCard != null && secondCard != null && firstCard != secondCard) {
                 if (
                     cards[firstCard].firstElementChild.src === cards[secondCard].firstElementChild.src
-                ) 
+                ){
+                    setTimeout(() => {
+                        cards[firstCard].classList.add('successfully');
+                        cards[secondCard].classList.add('successfully');
+
+                        firstCard = null;
+                        secondCard = null;
+                        clickable = true;
+                    }, 500);
+                }
