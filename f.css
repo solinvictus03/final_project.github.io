@@ -44,3 +44,11 @@
     display: flex;
     align-items: center;
 }
+
+label {
+    width: 180px;
+}
+
+.agree {
+    display: flex;
+}
