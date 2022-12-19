@@ -15,5 +15,8 @@
             values(?,?,?,?,?)');
          $stmt -> bind_param("sssss", $name, $surname, $email, $phone, $comment);
         $stmt -> execute();
+        echo "Registered successfully...";
+        $stmt -> close();
+        $con -> close();
     }
 ?>
