@@ -9,3 +9,13 @@ $con = new mysqli('localhost', 'root', '', 'login');
 if($con -> connect_error){
 die('Connection failed: ' .$con->connect_error);
 }
+else{
+    $stmt = $con->prepare('insert into contact(name, surname, email, phone, comment)
+    values(?,?,?,?,?)');
+    $stmt -> bind_param("sssss", $name, $surname, $email, $phone, $comment);
+    $stmt -> execute();
+    echo "Registered successfully...";
+    $stmt -> close();
+    $con -> close();
+    }
+    ?>

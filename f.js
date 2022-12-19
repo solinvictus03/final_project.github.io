@@ -30,3 +30,19 @@ function checkpsw() {
             document.getElementById("alert").innerHTML = "Account has been created";
         }
     }
+    
+    if (name == "" || surname == "" || email == "") {
+        alert("Fill all requirements!");
+    }
+}
+
+const loginText = document.getElementById("loginText"),
+    regsiterBlock = document.getElementById('registerBlock'),
+    container2 = document.getElementById('container2'),
+    registerText = document.getElementById("registerText");
+
+loginText.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    container2.classList.add("pos-active");
+    regsiterBlock.classList.add("form-active");
