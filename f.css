@@ -129,3 +129,18 @@ select {
     margin-top: -210px;
 }
 
+.container-hide {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.container2-hide {
+    position: relative;
+}
+
+.pos {
+    position: absolute;
+    left: -1500px;
+    transition: all 0.5s ease;
+}
+
