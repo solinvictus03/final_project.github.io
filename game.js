@@ -23,3 +23,22 @@ import { createImagesArray, duplicateArray, shuffle } from "./utils.js";
     duplicatedCardsIcons.forEach(icon => gameTable.append(createGameCard('question-circle', icon)));
 
     gameSection.append(gameTable, restartBtn);
+
+  
+  const cards = document.querySelectorAll('.game-card');
+
+    restartBtn.addEventListener('click', () => { window.location.reload() });
+
+    cards.forEach((card, index) => card.addEventListener('click', () => {
+        if (clickable == true && !card.classList.contains('successfully')) {
+            card.classList.add('flip');
+            
+
+            if (firstCard == null) {
+                firstCard = index;
+            } else {
+                if (index != firstCard) {
+                    secondCard = index;
+                    clickable = false;
+                }
+            }
