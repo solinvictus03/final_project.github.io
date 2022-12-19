@@ -1,0 +1,15 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.form {
+    color: rgb(233, 233, 233);
+    font-size: 20px;
+    margin-top: 250px;
+}
+
