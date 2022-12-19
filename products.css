@@ -189,6 +189,7 @@ body {
 li {
     color: white;
 }
+
 .footer {
 
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0);
@@ -197,27 +198,61 @@ li {
     text-align: left;
     font: normal 16px sans-serif;
     padding: 45px 50px;
-    }
-    
-    .footer .footer-left0 p {
+}
+
+.footer .footer-left0 p {
     color: black;
     font-size: 14px;
     margin: 0;
-    }
-    
-    .footer p.footer-links0 {
+}
+
+.footer p.footer-links0 {
     font-size: 18px;
     font-weight: bold;
     color: black;
     margin: 0 0 10px;
     padding: 0;
     transition: ease .25s;
-    }
-    
-    .footer p.footer-links0 a {
+}
+
+.footer p.footer-links0 a {
     display: inline-block;
     line-height: 1.8;
     text-decoration: none;
     color: inherit;
     transition: ease .25s;
-    }
+}
+
+.footer .footer-links0 a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: black;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer .footer-links0 .link-0:before {
+    content: none;
+}
+
+.footer .footer-right0 {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+.footer .footer-right0 a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    align-items: center;
+    line-height: 35px;
+    margin-left: 2px;
+    transition: all .25s;
+    right: 10px;
+}
