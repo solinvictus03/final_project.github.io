@@ -1,0 +1,372 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #666;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 1.4em; 
+	background-color: #06050d;
+    background-repeat: no-repeat;
+	background-position: top;
+	overflow-x: hidden;
+}
+
+a, a:link, a:visited { color: white; font-weight: normal; text-decoration: none }
+a:hover { text-decoration: underline; }
+
+a.more { display: inline-block; padding: 3px 10px; font-size: 12px; font-weight: bold; color: #21bdd0; background: #e9e9e9 }
+a.more:hover { background: #333; text-decoration: none }
+
+p { margin: 0 0 10px 0; padding: 0; color: white;font-size: 15px; }
+
+h1, h2, h3, h4, h5, h6 { color: white; font-weight: normal; }
+h1 { font-size: 30px; margin: 0 0 30px; padding: 5px 0 }
+h2 { font-size: 26px; margin: 0 0 25px; padding: 5px 0 }
+h3 { font-size: 20px; margin: 0 0 20px; padding: 0; }
+h4 { font-size: 16px; margin: 0 0 15px; padding: 0; }
+h5 { font-size: 14px; margin: 0 0 10px; padding: 0;  }
+h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
+
+.cleaner { clear: both }
+.h10 { height: 10px }
+.h20 { height: 20px }
+.h30 { height: 30px }
+.h40 { height: 40px }
+.h50 { height: 50px }
+
+#subpage { background-color: #000; }
+
+#templatemo_wrapper {
+	width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+#templatemo_header {
+	width: 960px;
+	height: 100px;
+}
+#site_title { float: left; margin-top: 20px; }
+
+#menu { 
+	width: 960px;
+	height: 50px;
+
+}
+
+.menu ul{
+	z-index:100;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.menu ul li{
+	position: relative;
+	display: inline;
+	float: left;
+}
+
+.menu ul li a {
+	display: block;
+	padding: 0 30px;
+	height: 50px;
+	line-height: 45px;
+	font-size: 15px;
+	color: floralwhite;	
+	text-decoration: none;
+	font-weight: 700;
+	outline: none;
+	text-align: center;
+	background: url(images/templatemo_menu_divider.png) right center no-repeat
+}
+
+* html .menu ul li a{ 
+display: inline-block;
+}
+
+.menu ul li a.selected, .menu ul li a:hover { 
+	color: #948e6b;;
+}
+
+.menu ul li ul {
+	position: absolute;
+	left: 0;
+	padding: 10px 0 0;
+	display: none; 
+	visibility: hidden;
+	border-bottom: 4px solid #d4d4d4
+}
+
+
+.menu ul li ul li{
+display: list-item;
+float: none;
+}
+
+
+.menu ul li ul li ul{
+top: 0;
+}
+
+
+.menu ul li ul li a{
+	font-weight: 400;
+	width: 130px;
+	height: 30px;
+	padding: 0 30px;
+	line-height: 30px;
+	font-size: 11px;	
+	text-align: left;
+	background: none;
+	color: #666;
+	border-bottom: 1px dotted #999
+}
+
+.menu ul li ul li a.selected, .menu ul li ul li a:hover {
+	color: white;
+	font-weight: 700;
+	background: none;
+}
+
+
+#templatemo_main_top {
+	width: 960px;
+	height: 12px;
+	
+}
+
+#templatemo_main {
+	width: 960px;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 50px;
+}
+
+#content {
+	width: 960px;
+	width: 960px;
+	padding: 20px 10px 20px;
+}
+#content h2 { font-size: 24px; padding-bottom: 10px; border-bottom: 1px solid floralwhite; margin-bottom: 20px }
+
+.hachh {
+	position: absolute;
+	top: -400px;
+	right: 200px;
+	width: 920px;
+	left: 800px;
+ }
+
+ .ataturkk {
+	position: absolute;
+	top: -400px;
+	right: 0px;
+	right: 800px;
+	width: 980px
+ }
+
+ .okey {
+	position: relative;
+	z-index: -1;
+	
+ }
+ @keyframes change {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.ataturkk {
+	animation-name: moving;
+	animation-duration: 2s;
+	animation-delay: 0.1s;
+}
+
+.hachh {
+	animation-name: moving;
+	animation-duration: 2s;
+	animation-delay: 0.1s;
+}
+
+@keyframes moving {
+	0% {
+	 top:30px;
+	  }  
+}
+
+.cleaner { clear: both }
+
+.footer-distributed {
+  
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 200px;
+  }
+  
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    line-height: 35px;
+    margin-left: 2px;
+    transition:all .25s;
+    right: 10px;
+  }
+  
+  .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+  .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+  
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }
+  .menu ul{
+	z-index:100;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+.menu ul li{
+	position: relative;
+	display: inline;
+	float: left;
+}
+
+
+.menu ul li a {
+	display: block;
+	padding: 0 35px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 15px;
+	color: floralwhite;	
+	text-decoration: none;
+	font-weight: 700;
+	outline: none;
+	text-align: center;
+	background: url(images/templatemo_menu_divider.png) right center no-repeat
+}
+
+* html .menu ul li a{ 
+display: inline-block;
+}
+
+.menu ul li a.selected, .menu ul li a:hover { 
+	color: #948e6b;;
+}
+
+
+.menu ul li ul {
+	position: absolute;
+	left: 0;
+	padding: 10px 0 0;
+	display: none; 
+	visibility: hidden;
+	border-bottom: 4px solid #d4d4d4
+}
+
+
+.menu ul li ul li{
+display: list-item;
+float: none;
+}
+
+.menu ul li ul li ul{
+top: 0;
+}
+
+
+.menu ul li ul li a{
+	font-weight: 400;
+	width: 130px; 
+	height: 30px;
+	padding: 0 30px;
+	line-height: 30px;
+	font-size: 11px;	
+	text-align: left;
+	background: none;
+	color: #666;
+	border-bottom: 1px dotted #999
+}
+
+.menu ul li ul li a.selected, .menu ul li ul li a:hover {
+	color: white;
+	font-weight: 700;
+	background: none;
+}
+
+
+* html .menu{height: 1%;} 
