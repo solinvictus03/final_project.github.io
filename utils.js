@@ -1,12 +1,40 @@
 export const shuffle = (array) => {
     let currentIndex = array.length, randomIndex;
-    
+
     while (currentIndex != 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-    
-    [array[currentIndex], array[randomIndex]] = [
-    array[randomIndex], array[currentIndex]];
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
     }
     return array;
-    }
+}
+export const duplicateArray = (array) => array.reduce((res, current) => res.concat([current, current]), []);
+
+export const createImagesArray = () => {
+    const animeImagesArray = ['pict/1.webp', 'pict/2.webp', 'pict/3.webp', 'pict/4.webp', 'pict/5.webp', 'pict/6.webp', 'pict/7.webp', 'pict/8.webp'];
+    return animeImagesArray;
+}
+import { createGameCard } from "./gameCard.js";
+import { createImagesArray, duplicateArray, shuffle } from "./utils.js";
+
+const startGame = () => {
+    let firstCard = null;
+    let secondCard = null;
+    let clickable = true;
+
+    const gameSection = document.querySelector('.game-section__container');
+    const gameTable = document.createElement('div');
+    const cardsIcons = createImagesArray();
+    const duplicatedCardsIcons = duplicateArray(cardsIcons);
+    const restartBtn = document.createElement('button');
+
+    gameSection.innerHTML = '';
+    restartBtn.textContent = 'Restart';
+    gameTable.classList.add('game-table');
+    restartBtn.classList.add('restart-btn');
+
+    shuffle(duplicatedCardsIcons);
+
+    duplicatedCardsIcons.forEach(icon => gameTable.append(createGameCard('question-circle', icon)));
