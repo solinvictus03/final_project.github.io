@@ -351,3 +351,44 @@ h6 {
     margin-top: 6px;
     max-width: 200px;
 }
+
+.footer-distributed .footer-right a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    line-height: 35px;
+    margin-left: 2px;
+    transition: all .25s;
+    right: 10px;
+}
+
+.footer-distributed .footer-right a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+    text-decoration: underline;
+}
+
+max-width: 600px {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        text-align: center;
+    }
+
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+}
