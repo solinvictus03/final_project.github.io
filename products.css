@@ -266,7 +266,7 @@ li {
     text-decoration: underline;
 }
 
-max-width: 600px {
+@media (max-width: 600px){
 
     .footer .footer-left0,
     .footer .footer-right0 {
