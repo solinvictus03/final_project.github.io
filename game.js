@@ -55,3 +55,14 @@ import { createImagesArray, duplicateArray, shuffle } from "./utils.js";
                         clickable = true;
                     }, 500);
                 }
+  else {
+                    setTimeout(() => {
+                        cards[firstCard].classList.remove('flip');
+                        cards[secondCard].classList.remove('flip');
+
+                        firstCard = null;
+                        secondCard = null;
+                        clickable = true;
+                    }, 500);    
+                }
+            }
