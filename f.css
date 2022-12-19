@@ -34,3 +34,16 @@
     text-transform: uppercase;
 }
 
+.container .form {
+    width: 100%;
+}
+
+.container .enter {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    width: 180px;
+}
