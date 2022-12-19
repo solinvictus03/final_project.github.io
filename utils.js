@@ -14,3 +14,9 @@ export const shuffle = (array) => {
 
 export const duplicateArray = (array) => array.reduce((res, current) => res.concat([current, current]), []);
 
+
+export const createImagesArray = () => {
+    const animeImagesArray = ['pict/1.webp', 'pict/2.webp', 'pict/3.webp', 'pict/4.webp', 'pict/5.webp', 'pict/6.webp', 'pict/7.webp', 'pict/8.webp'];
+    return animeImagesArray;
+}
+
