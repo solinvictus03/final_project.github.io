@@ -42,3 +42,7 @@ import { createImagesArray, duplicateArray, shuffle } from "./utils.js";
                     clickable = false;
                 }
             }
+ if (firstCard != null && secondCard != null && firstCard != secondCard) {
+                if (
+                    cards[firstCard].firstElementChild.src === cards[secondCard].firstElementChild.src
+                ) 
