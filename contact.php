@@ -10,4 +10,8 @@
         die('Connection failed:  ' .$con->connect_error);
     }
     
+    else{
+        $stmt = $con->prepare('insert into contact(name, surname, email, phone, comment)
+            values(?,?,?,?,?)');
+    }
 ?>
