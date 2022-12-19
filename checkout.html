@@ -132,3 +132,22 @@
             document.MyForm.stopwatch.value = readout;
             clocktimer = setTimeout("StartTIME()", 1);
         }
+        
+        function StartStop() {
+            if (init == 0) {
+                ClearСlock();
+                dateObj = new Date();
+                StartTIME();
+                init = 1;
+            } else {
+                clearTimeout(clocktimer);
+                init = 0;
+            }
+        }
+    </script>
+    <script type="module" src="game/game.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</body>
+
+</html>

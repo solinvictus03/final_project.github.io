@@ -145,3 +145,31 @@ body {
     border-radius: 10px;
     z-index: -2;
 }
+
+#sekundomers {
+    width: 314px;
+    height: 86px;
+    background: #fbefef;
+    color: #2c2a2a;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 28px;
+}
+
+#sekundomers span {
+    background: #40709f;
+    color: #ffeffb;
+    padding: 10px;
+    width: 60px;
+    border-radius: 3px;
+    margin: 5px;
+    display: inline-block;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
