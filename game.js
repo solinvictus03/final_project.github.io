@@ -66,3 +66,16 @@ import { createImagesArray, duplicateArray, shuffle } from "./utils.js";
                     }, 500);    
                 }
             }
+if (Array.from(cards).every(card => card.className.includes('flip'))) {
+                StartStop();
+                document.getElementsByName('button').innerHTML = 'You won 1 ability! Click here';
+            }
+            
+        }
+    }));
+    
+}
+
+startGame();
+
+
