@@ -13,5 +13,7 @@
     else{
         $stmt = $con->prepare('insert into contact(name, surname, email, phone, comment)
             values(?,?,?,?,?)');
+         $stmt -> bind_param("sssss", $name, $surname, $email, $phone, $comment);
+        $stmt -> execute();
     }
 ?>
