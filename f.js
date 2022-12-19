@@ -30,7 +30,7 @@ function checkpsw() {
             document.getElementById("alert").innerHTML = "Account has been created";
         }
     }
-    
+
     if (name == "" || surname == "" || email == "") {
         alert("Fill all requirements!");
     }
@@ -46,3 +46,12 @@ loginText.addEventListener('click', (e) => {
 
     container2.classList.add("pos-active");
     regsiterBlock.classList.add("form-active");
+});
+
+registerText.addEventListener("click", (e) => {
+    e.preventDefault();
+    
+    regsiterBlock.classList.remove("form-active");
+    container2.classList.remove("pos-active");
+
+});
