@@ -116,3 +116,16 @@ select {
     font-size: 15px;
     text-align: center;
 }
+
+.reg {
+    margin: auto;
+    max-width: 500px;
+    width: 100%;
+    padding: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: -210px;
+}
+
