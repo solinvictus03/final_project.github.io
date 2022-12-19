@@ -189,3 +189,35 @@ body {
 li {
     color: white;
 }
+.footer {
+
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+    }
+    
+    .footer .footer-left0 p {
+    color: black;
+    font-size: 14px;
+    margin: 0;
+    }
+    
+    .footer p.footer-links0 {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+    }
+    
+    .footer p.footer-links0 a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+    }
