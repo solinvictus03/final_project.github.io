@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #666;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+    background-color: #06050d;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow-x: hidden;
+}
+
+#wrapper {
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 960px;
+    height: 100px;
+}
+
+#menu {
+    width: 960px;
+    height: 50px;
+
+}
