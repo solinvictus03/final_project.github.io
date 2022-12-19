@@ -647,3 +647,40 @@ select {
     margin: 0 auto;
     margin-top: -210px;
 }
+
+.container-hide {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.container2-hide {
+    position: relative;
+}
+
+.pos {
+    position: absolute;
+    left: -1500px;
+    transition: all 0.5s ease;
+}
+
+.pos-active {
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+.form {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.form-active {
+    top: -500px;
+    transition: all 0.5s ease;
+}
