@@ -1,0 +1,53 @@
+body {
+    background: #6f6a6a;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    background-image: url("b_i.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.container {
+    max-width: 1250px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 15px 0;
+}
+
+.font-effect-neon {
+    text-align: center;
+    color: #420e60;
+    margin: 0;
+    font-size: 3.2em;
+    letter-spacing: 5px;
+}
+
+.game-section {
+    padding-top: 20px;
+}
+
+.game-section__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-menu__title {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+}
