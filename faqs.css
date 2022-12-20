@@ -94,13 +94,13 @@ h6 {
     background-color: #000;
 }
 
-#templatemo_wrapper {
+#wrapper {
     width: 960px;
     padding: 0 10px;
     margin: 0 auto;
 }
 
-#templatemo_header {
+#header {
     width: 960px;
     height: 100px;
 }
@@ -191,13 +191,13 @@ h6 {
     background: none;
 }
 
-#templatemo_main_top {
+#main_top {
     width: 960px;
     height: 12px;
 
 }
 
-#templatemo_main {
+#main {
     width: 960px;
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.7);
@@ -299,7 +299,7 @@ h6 {
     clear: both
 }
 
-.footer-distributed {
+.footer {
 
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0);
     box-sizing: border-box;
@@ -309,14 +309,14 @@ h6 {
     padding: 45px 50px;
 }
 
-.footer-distributed .footer-left p {
+.footer .footer-left p {
     color: #8f9296;
     font-size: 14px;
     margin: 0;
 }
 
 
-.footer-distributed p.footer-links {
+.footer p.footer-links {
     font-size: 18px;
     font-weight: bold;
     color: #ffffff;
@@ -325,7 +325,7 @@ h6 {
     transition: ease .25s;
 }
 
-.footer-distributed p.footer-links a {
+.footer p.footer-links a {
     display: inline-block;
     line-height: 1.8;
     text-decoration: none;
@@ -333,7 +333,7 @@ h6 {
     transition: ease .25s;
 }
 
-.footer-distributed .footer-links a:before {
+.footer .footer-links a:before {
     content: "·";
     font-size: 20px;
     left: 0;
@@ -342,17 +342,17 @@ h6 {
     padding-right: 5px;
 }
 
-.footer-distributed .footer-links .link-1:before {
+.footer .footer-links .link-1:before {
     content: none;
 }
 
-.footer-distributed .footer-right {
+.footer .footer-right {
     float: right;
     margin-top: 6px;
     max-width: 200px;
 }
 
-.footer-distributed .footer-right a {
+.footer .footer-right a {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -367,28 +367,28 @@ h6 {
     right: 10px;
 }
 
-.footer-distributed .footer-right a:hover {
+.footer .footer-right a:hover {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
 }
 
-.footer-distributed p.footer-links a:hover {
+.footer p.footer-links a:hover {
     text-decoration: underline;
 }
 
-max-width: 600px {
+@media (max-width: 600px) {
 
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-right {
+    .footer .footer-left,
+    .footer .footer-right {
         text-align: center;
     }
 
-    .footer-distributed .footer-right {
+    .footer .footer-right {
         float: none;
         margin: 0 auto 20px;
     }
 
-    .footer-distributed .footer-left p.footer-links {
+    .footer .footer-left p.footer-links {
         line-height: 1.8;
     }
 }
